@@ -9,7 +9,7 @@ import threading
 
 root = Tk()  # This Tk func creates a window and stores it in variable root
 
-statusbar = Label(root, text="Welcome to Rhythm", relief=SUNKEN,
+statusbar = Label(root, text="Welcome to Rhythm-The music player", relief=SUNKEN,
                   anchor=W)  # relief is used to put the text in a box and anchor for direction of text
 statusbar.pack(side=BOTTOM,fill=X)  # to put statusbar at the bottom n fill used to expand the box of msg to the X axis
 
@@ -132,11 +132,11 @@ def playmusic():  # we made a func name playmusic
             showdet(play_it)
         except:
             print("Error")
-            tkinter.messagebox.showerror('Error', 'Open a file first')  # if you press play without specifing a song
+            tkinter.messagebox.showerror('Error', 'Open a Music file First')  # if you press play without specifing a song
 
 def stopmusic():  # a function to stop the music
     mixer.music.stop()  # stop function
-    statusbar['text'] = "Music Stopped"
+    statusbar['text'] = "Mujic rukgaya"
 
 paused= FALSE
 
